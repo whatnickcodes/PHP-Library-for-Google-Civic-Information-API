@@ -1,0 +1,82 @@
+header, footer {
+	background: #1A1A1A;
+}
+
+header {	
+	border-bottom: 10px solid #00CCFF;
+}
+
+footer {
+	border-top: 10px solid #00CCFF;
+	min-height: 125px;
+}
+
+header #logo {
+	width: 30%;
+	height: 150px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+header #logo svg {
+	fill: #00CCFF;
+}
+
+header h1 {
+	width: 100%;
+	text-align: center;
+	color: #CFCFCF;
+}
+
+footer {
+	text-align: center;
+	font-size: 30px;
+	line-height: 125px;
+}
+
+#content {
+	width: 85%;
+	margin: 50px auto 0;
+}
+
+form input {
+	font-family: 'Segoe UI Light', 'Lato', Arial, Helvetica, sans-serif;
+}
+
+#content form input[type=text] {
+	width: 100%;
+	text-align: center;
+	font-size: 69px;
+	height: 150px;
+}
+
+#content form input[type=submit] {
+	width: 40%;
+	height: 60px;
+	margin: 30px auto;
+	display: block;
+	font-size: 30px;
+}
+#content form input[type=submit]:hover {
+	border: none;
+}
+
+#results {
+	margin: 0 auto 80px;
+}
+
+#results h1 {
+	text-align: center;
+	width: 100%;
+	color: orange;
+}
+
+.polling-location {
+	width: 60%;
+	margin: 30px auto 0;
+	padding: 20px 0 40px;
+	color: orange;
+	text-align: center;
+
+}

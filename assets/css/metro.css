@@ -1,0 +1,288 @@
+/*
+
+
+
+PRE BETA ALPHA
+
+
+
+*/
+
+
+
+
+/* =============================================================================================
+ * =RESET STYLING
+================================================================================================= */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; background:transparent; }
+
+/* =============================================================================================
+ * =BASIC ELEMENTS
+================================================================================================= */
+/* correct text resizing in IE6/7 and iOS */
+html					{ font-size:100%; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; 
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;	
+}
+
+p						{ line-height:1.5; margin:15px 0; }
+ul, ol, dl				{ list-style-position:inside; }
+ul ul					{ margin-left:25px; }
+
+pre						{ background:#EFEFEF; color:#585858; font-size:14px; margin:20px 0; }
+code					{ background:#339933; color:#EFEFEF; font-size:14px; margin:20px 0; }
+pre						{ padding:15px; white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
+code                  	{ padding:2px 5px; font-family:Courier; }
+pre, code, kbd, samp 	{ font-family:monospace, serif; _font-family:'courier new', monospace; }
+blockquote				{ border-left:5px solid #1BA1E2; padding:0 20px; }
+blockquote small:before, blockquote cite:before 		{ content:"â€” "; }
+
+kbd 					{ background-color:#F7F7F7; border:1px solid #CCC; display:inline-block; font-size:90%; margin:0 0.1em; padding:0.1em 0.6em; text-shadow:0 1px 0 white; }
+
+/* Definition List */
+dt						{ font-weight:700; }
+dd						{ margin-left:25px; }
+
+/* =============================================================================================
+ * =LINKS
+================================================================================================= */
+/* Remove dotted outline when clicking links or link images. */
+a img			    				{ border:none; outline:none; }
+a, a:hover, a:focus, a:active		{ outline:none; }
+
+/* Consistent colors */
+a									{ color:#607890; text-decoration:none; }
+a:hover								{ color:#E671B8; }
+a:active							{ color:#607890; outline:none; }
+
+/* Improve readability when focused and hovered in all browsers */
+a:hover, a:active 					{ outline:0; }
+
+/* =============================================================================================
+ * =TYPOGRAPHY
+================================================================================================= */
+html, body, button, input, select, textarea			{ color:#333; font-family:'Segoe UI', 'Lato', Arial, Helvetica, sans-serif; font-size:16px; line-height:1.5; }
+
+/* Responsive sizing */
+h1, h2, h3, h4, h5									{ font-family:'Segoe UI Light', 'Lato', Arial, Helvetica, sans-serif; font-weight:300; line-height:2; }
+h1 small, h2 small, h3 small, h4 small, h5 small	{ color:#CCC; }
+h1													{ color:#000; font-size:280%; }
+h2													{ color:#000; font-size:250%; }
+h3													{ color:#373737; font-size:210%; }
+h4                                              	{ color:#373737; font-size:160%; }
+h5													{ color:#373737; font-size:100%; }
+
+em, i												{ font-family:'Lato', Arial, Helvetica, sans-serif; font-style:italic; }
+b, strong 											{ color:#000; font-family:'Lato', Arial, Helvetica, sans-serif; font-weight:700; }
+small 												{ font-size:85%; }
+
+/* =============================================================================================
+ * =FORMS
+================================================================================================= */
+/* Indicate that <label> will shift focus to the associated form element */
+label								{ cursor:pointer; }
+button								{ cursor:pointer; overflow:visible; width:auto; }
+
+/* 	Standardize hover, outline, and border for :hover, :active, :focus 
+	inputs will show border when :hover or :active
+	checkboxes and radio will show blue outline and no border
+*/
+	
+form, input, select, button, textarea, .button  			{ font-size:14px; }
+
+input, button, textarea, select							{ border:0; outline:none; }
+input:focus, button:focus textarea:focus, select:focus	{ outline:none; }
+input[type=button], input[type=submit] 					{ cursor:pointer; *overflow:visible; }
+
+input[type=checkbox], input[type=checkbox]:hover, input[type=checkbox]:focus	{ margin:3px; }
+input[type=checkbox]:focus														{ outline:1px solid #1BA1E2; }
+
+input[type=radio], input[type=radio]:hover, input[type=radio]:focus				{ margin:3px; }
+
+input:focus, input:hover			{ border:2px solid #DDD; outline:none; }
+input[type=file]:hover				{ border:none; }
+input:active						{ outline:none; }
+
+select								{ width:220px; }
+.add-on								{ background:#1BA1E2; color:#EFEFEF; padding:6px 10px; }
+
+/* =============================================================================================
+ * =TABLES
+================================================================================================= */
+table						{ border:1px solid #DDD; border-collapse:collapse; margin:20px 0; width:100%; }
+th							{ background:#DDD; font-weight:700; }
+th, td						{ border:1px solid #DDD; padding:8px 10px; text-align:left; }
+
+tr:nth-child(even) td		{ background:#F7F7F7; } 
+tr:hover td					{ background:#EFEFEF; }
+
+/* =============================================================================================
+ * HTML5 
+================================================================================================= */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section			{ display:block; }
+audio, canvas, video 																			{ display:inline-block; *display:inline; *zoom:1; }
+
+/* Text highlight color */
+::selection               	  		{ background-color:#994496; color:#FFF; text-shadow:none; }
+::-moz-selection					{ background-color:#994496; color:#FFF; text-shadow:none; }
+
+/* ==============================================================================================
+ * SPECIAL CLASSES
+ =============================================================================================== */
+.clearfix:after			{ clear:both; content:''; display:block; height:0; visiblity:hidden; }
+.clearfix				{ zoom:1; }
+
+/*
+Metro Colors
+	Magenta 	#FF0097 | #ff41b2	
+	Purple 		#A200FF | #bb46ff		
+	Teal 		#00ABA9 | #14d8d6		
+	Lime 		#8CBF26 | #a9e13a		
+	Brown 		#A05000 | #bf650b		
+	Pink 		#E671B8 | #f68acc		
+	Mango 		#F09609 | #f6a931		
+	Blue 		#1BA1E2 | #29b4f8 
+	Red 		#E51400 | #fe4432		
+	Green 		#339933 | #4fc24f	
+*/
+
+.container			{ margin:0 auto; width:80%; }
+
+/* =============================================================================================
+ * =TILES
+================================================================================================= */
+.tile				{ display:inline-block; margin:3%; vertical-align:top; }
+
+/* Sizes */
+.one-third			{ width:30%; }
+.two-third			{ width:60%; }
+
+.one-fourth			{ width:25%; }
+.two-fourth			{ width:50%; }
+.three-fourth		{  }
+
+/* Colors */
+
+/* =============================================================================================
+ * =FORM ELEMENTS
+================================================================================================= */
+label																						{ display:block; font-size:85%; margin:3px 0; }
+input[type=text], input[type=password], input[type=file], textarea, button, select			{ background:#EFEFEF; margin:2px; padding:5px 10px; }
+input:hover, input:focus, textarea:hover, textarea:focus, button:hover, button:focus		{ border:2px solid #E6E6E6; margin:0; }
+
+input[type=file] 				{ background:none; }
+input[type=file]:hover			{ border:none; margin:2px; }
+
+/* Form Buttons */
+button, input[type=submit], input[type=button]													{ background:#1BA1E2; border:none; color:#FFF; margin:2px; padding:5px 10px; }
+button:hover, button:active, button:focus, input[type=submit]:hover, input[type=button]:hover	{ background:#29b4f8; border:2px solid #DFDFDF; margin:0; text-decoration:none; }
+
+/* =============================================================================================
+ * =BUTTONS
+================================================================================================= */
+.button, a.button						{ background:#1BA1E2; border:none; color:#FFF; margin:2px; padding:5px 10px; }
+.button:hover, a.button:hover			{ border:2px solid #DFDFDF; margin:0; text-decoration:none; }
+
+/* Sizes */
+.button-supersize		{ font-size:200%; padding:30px 60px; }
+.button-large			{ font-size:125%; padding:15px 30px; }
+.button-small			{ font-size:85%; padding:2px 5px; }
+
+/* Disabled */
+input.disabled, input[disabled]					{ background:#F9F9F9; color:#FFF; cursor:not-allowed; margin:2px; outline:none; }
+input.disabled:hover, input[disabled]:hover		{ border:none; cursor:not-allowed; margin:2px; outline:none; }
+.disabled, button[disabled]						{ background:#8dd0f0; border:none; }
+.disabled:hover, button[disabled]:hover			{ border:none; cursor:default; margin:2px; }
+
+/* =============================================================================================
+ * =COLORS
+================================================================================================= */
+.background-white, input.background-white, button.background-white			{ background-color:#FFF; }
+.background-magenta, input.background-magenta, button.background-magenta	{ background-color:#FF0097; }
+.background-purple, input.background-purple, button.background-purple		{ background-color:#A200FF; }
+.background-teal, input.background-teal, button.background-teal				{ background-color:#00ABA9; }
+.background-lime, input.background-lime, button.background-lime				{ background-color:#8CBF26; }
+.background-brown, input.background-brown, button.background-brown			{ background-color:#A05000; }
+.background-pink, input.background-pink, button.background-pink				{ background-color:#E671B8; }
+.background-mango, input.background-mango, button.background-mango			{ background-color:#F09609; }
+.background-blue, input.background-blue, button.background-blue				{ background-color:#1BA1E2; }
+.background-red, input.background-red, button.background-red				{ background-color:#E51400; }
+.background-green, input.background-green, button.background-green			{ background-color:#339933; }
+
+	.background-magenta:hover, .background-magenta:active, button.background-magenta:hover	{ background-color:#ff41b2; }
+	.background-purple:hover, .background-purple:active, button.background-purple:hover		{ background-color:#bb46ff; }
+	.background-teal:hover, .background-teal:active, button.background-teal:hover			{ background-color:#14d8d6; }
+	.background-lime:hover, .background-lime:active, button.background-lime:hover			{ background-color:#a9e13a; }
+	.background-brown:hover, .background-brown:active, button.background-brown:hover		{ background-color:#bf650b; }
+	.background-pink:hover, .background-pink:active, button.background-pink:hover			{ background-color:#f68acc; }
+	.background-mango:hover, .background-mango:active, button.background-mango:hover		{ background-color:#f6a931; }
+	.background-blue:hover, .background-blue:active, button.background-blue:hover			{ background-color:#29b4f8; }
+	.background-red:hover, .background-red:active, button.background-red:hover				{ background-color:#fe4432; }
+	.background-green:hover, .background-green:active, button.background-green:hover		{ background-color:#4fc24f; }
+
+.color-white			{ color:#FFF; }
+.color-magenta			{ color:#FF0097;  }
+.color-purple			{ color:#A200FF; }
+.color-teal				{ color:#00ABA9; }
+.color-lime				{ color:#8CBF26; }
+.color-brown			{ color:#A05000; }
+.color-pink				{ color:#E671B8; }
+.color-mango			{ color:#F09609; }
+.color-blue				{ color:#1BA1E2; }
+.color-red				{ color:#E51400; }
+.color-green			{ color:#339933; }
+
+/* =============================================================================================
+ * =ICONS
+================================================================================================= */
+
+.icon span 				{ margin-right:6px; }
+.icon svg				{ margin-bottom:-0.5em; padding:0.3em; }
+
+/* Size */
+.icon-tiny svg 			{ border-size:1px; height:16px; margin-bottom:-0.2em; width:16px; }
+.icon-small svg 		{ border-size:1px; height:24px; margin-bottom:-0.3em; width:24px; }
+.icon-medium svg		{ border-size:1px; height:32px; margin-bottom:-0.4em; width:32px; }
+.icon-large svg			{ border-size:1px; height:48px; margin-bottom:-0.5em; width:48px; }
+.icon-supersize svg		{ border-size:1px; height:64px; margin-bottom:-0.5em; width:64px; }
+
+/* Background Shape */
+.circle svg 			{ border:0.1em solid #000; border-radius:1000em; }
+
+/* Colors */
+.icon-white svg			{ border-color:#FFF; fill:#FFF; }
+.icon-magenta svg		{ border-color:#FF0097; fill:#FF0097; }
+.icon-purple svg		{ border-color:#A200FF; fill:#A200FF; }
+.icon-teal svg			{ border-color:#00ABA9; fill:#00ABA9; }	
+.icon-lime svg			{ border-color:#8CBF26; fill:#8CBF26; }	
+.icon-brown svg			{ border-color:#A05000; fill:#A05000; }
+.icon-pink svg			{ border-color:#E671B8; fill:#E671B8; }	
+.icon-mango svg			{ border-color:#F09609; fill:#F09609; }
+.icon-blue svg			{ border-color:#1BA1E2; fill:#1BA1E2; }	
+.icon-red svg			{ border-color:#E51400; fill:#E51400; }	
+.icon-green svg			{ border-color:#339933; fill:#339933; }
+
+/* Position */
+
+
+/* =============================================================================================
+ * =NAVIGATION
+================================================================================================= */
+header nav ul 			{ list-style:none; }
+
+/* =============================================================================================
+ * =TOAST MESSAGES
+================================================================================================= */
+#js-toast-container			{ background:#FF0097; color:#FFF; display:block; font-size:400%; height:125px; line-height:1.8; position:fixed; top:-125px; text-align:center; width:100%; }
+
+/* =============================================================================================
+ * =RESPONSIVE
+================================================================================================= */
+@media only screen and (max-width : 640px) {
+	h1, h2, h3, h4, h5								{ line-height:1.5; }
+	.container										{ width:90%; }
+}	
+
+/* Different Sizes based on media query */
+/* Consider having a different size class */
