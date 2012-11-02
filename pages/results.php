@@ -20,9 +20,13 @@
 			'internalLookupFailure' => 'An unspecified error occurred processing the request.'
 		);
 	?>
-
-
-	<div class="error"><?php echo $errors[$result['status']]; ?></div>
+	
+	<div class="error">
+		<?php echo $errors[$result['status']]; ?>
+		<br>
+		<br><!-- Wooooo Break Tags -->
+		<a href="/">Click here to try again</a>
+	</div>
 
 <?php else : ?>
 

@@ -78,5 +78,10 @@ form input {
 	padding: 20px 0 40px;
 	color: orange;
 	text-align: center;
+}
 
+.error {
+	color: orange;
+	font-size: 30px;
+	text-align: center;
 }
